@@ -1,0 +1,25 @@
+{
+  "name": "payouts",
+  "version": "0.1.0",
+  "description": "Build bundled Base MCP payout calls from payouts.csv.",
+  "author": {
+    "name": "Local developer"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Payouts",
+    "shortDescription": "Bundle payouts.csv recipients into one transaction approval.",
+    "longDescription": "Payouts reads a local payouts.csv file, validates pending ETH payout rows, converts amounts to wei, and prepares a Base MCP send_calls batch.",
+    "developerName": "Local developer",
+    "category": "Productivity",
+    "capabilities": [
+      "Read",
+      "Write"
+    ],
+    "defaultPrompt": [
+      "Prepare bundled payouts from payouts.csv.",
+      "Validate payouts.csv before sending.",
+      "Show payout totals by currency."
+    ]
+  }
+}
